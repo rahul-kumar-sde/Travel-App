@@ -1,0 +1,24 @@
+.footer {
+    background-image: url(../views/img/travel.jpg);
+    color: #000;
+    min-height: 3.5rem;
+    max-height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+
+    @media only screen and (min-width: 350px) {
+        font-size: 0.7rem;
+    }
+}
+  .copyright {
+    font-size: 20px;
+    padding-bottom: 0.25rem;
+
+    @media only screen and (min-width: 350px) {
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+    }
+  }

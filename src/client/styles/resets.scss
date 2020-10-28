@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63%;
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, center,form, caption, footer, header,  
+section, details {
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+}
+
+footer, header, section {
+display: block;
+}
+body {
+line-height: 1;
+}

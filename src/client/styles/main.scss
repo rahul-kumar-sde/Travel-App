@@ -1,0 +1,9 @@
+@import "header";
+@import "footer";
+@import "resets";
+@import "section";
+body {
+    background-image: url(../views/img/travel.png);
+    color: rgb(73, 73, 246);
+    font-family: Arial, Helvetica, sans-serif;
+}

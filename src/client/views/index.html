@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel App</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="navtitle">Travel App</h2>
+    </nav>
+  </header>
+
+  <div class="main">
+    <section id="card" class="section section_card">
+      <div class="container card_form">
+        <div class="form_image section_image">
+        </div>
+        <form class="form_content" id="form">
+          <h2 class="form_title">Plan your trip</h2>
+          <input type="text" class="form_ip ip_from" name="from" placeholder="From" autocomplete="off" required>
+          <input type="text" class="form_ip ip_to" name="to" placeholder="Destination" autocomplete="off" required>
+          <label class="date_label" for="date">Travel Start Date:</label>
+          <input type="date" class="form_ip ip_date" name="date" required>
+          <input style="width:100%;" type="submit" class="ip_submit" name="submit" value="Submit">
+          <input style="width:100%;" type="reset" class="ip_submit" name="reset" value="Reset">
+        </form>
+      </div>
+    </section>
+    <section id="result" class="section result_section invisible">
+        <div class="container results">
+            <div class="result_image">
+                <img src="" alt="destination image" id="Pixabay">
+            </div>
+            <div class="result_content">
+                <h2 class="city_class res_text">  Visit to: <span id="city"></span></h2>
+                <h2 class="date_class res_text">Departure on: <span id="date">DD/MM/YYYY</span></h2>
+                <h2 class="days_class res_text">Your Trip is <span id="days"> Num </span> days away.</h2>
+                <h2 class="weather_class res_text">Weather Forecast: <span id="temp">200C</span> F, <span id="details"></span>.</h2>
+                <a class="button del_button" id="delete" href="#">Delete</a>
+            </div>
+        </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="copyright">
+      <p class="copyright_text">Rahul Kumar | Travel App | 2020</p>
+    </div>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
